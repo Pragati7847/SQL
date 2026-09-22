@@ -118,9 +118,55 @@ FROM EmployeeDetail
 WHERE Department = 'IT';
 ```
 
-### Find employees whose names start with A
-
-```sql
+Find employees whose names start with A
 SELECT *
-FR
-```
+FROM EmployeeDetail
+WHERE name LIKE 'a%';
+Find the maximum salary
+SELECT MAX(Salary)
+FROM EmployeeDetail;
+Display employee names in uppercase
+SELECT UPPER(name) AS name
+FROM EmployeeDetail;
+Display complete employee names
+SELECT CONCAT(name, ' ', Lastname) AS Name
+FROM EmployeeDetail;
+Find employees within a salary range
+SELECT *
+FROM EmployeeDetail
+WHERE Salary BETWEEN 50000 AND 60000;
+🎯 Learning Objectives
+
+Through this project, I practiced:
+
+Creating and managing databases
+Designing relational tables
+Inserting structured data
+Retrieving and filtering records
+Working with string functions
+Performing aggregate calculations
+Working with dates
+Using pattern matching with LIKE
+Applying conditional logic using CASE
+Writing SQL queries for data analysis
+🚀 How to Run the Project
+Install MySQL or open MySQL Workbench.
+Create a new SQL query.
+Copy the SQL code from the project.
+Execute the database and table creation commands.
+Insert the employee records.
+Run the individual SELECT queries to explore the data.
+📁 Project Files
+Employee-SQL-Project/
+│
+├── Employee.sql
+└── README.md
+📌 Note
+
+This project is created for SQL learning and practice purposes. It demonstrates commonly used SQL operations on an employee dataset.
+
+👩‍💻 Author
+
+Pragati Srivastava
+
+This project is part of my learning journey in SQL, Database Management, and Data Analytics.
